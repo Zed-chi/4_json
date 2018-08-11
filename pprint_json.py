@@ -10,8 +10,8 @@ def load_data(filepath):
         print("invalid path")
 
 
-def pretty_print_json(data):
-    print(json.dumps(data, sort_keys=True, indent=4))
+def pretty_print_json(json_data):
+    print(json.dumps(json_data, sort_keys=True, indent=4))
 
 
 if __name__ == '__main__':

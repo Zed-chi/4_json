@@ -1,16 +1,16 @@
 # Prettify JSON
 ---
-Script gets path to valid json file and print it in pretty form
+Script gets path to json file and print it in pretty form
 
 ## Quickstart
 
-Example of script launch on Linux terminal, Python 3.5:
+Example of script launch on Linux, Python 3.5:
 
->```bash
->$ python3 pprint_json.py <path to file>
->```
+```bash
+$ python pprint_json.py <path to file>
+```
 
-Output is:
+Output:
 >```bash
 >{
 >  "userId": 1,

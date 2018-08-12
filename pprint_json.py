@@ -7,10 +7,10 @@ def load_data(filepath):
             return json.loads(json_file.read())
 
 
-def pretty_print_json(json_object):
+def pretty_print_json(decoded_json):
     print(
         json.dumps(
-            json_object,
+            decoded_json,
             sort_keys=True,
             indent=4,
             ensure_ascii=False,
@@ -21,8 +21,8 @@ def pretty_print_json(json_object):
 def main():
     try:
         path_to_file = sys.argv[1]
-        json_object = load_data(path_to_file)
-        pretty_print_json(json_object)
+        decoded_json = load_data(path_to_file)
+        pretty_print_json(decoded_json)
     except IndexError:
         print("No path were provided")
     except OSError:
